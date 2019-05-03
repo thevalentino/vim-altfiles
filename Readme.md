@@ -25,7 +25,7 @@ module_name/
 
 ## Julia Package
 
-If the file is in a Julia package, the plugin will automatically try to guess the _alternate_ file assiming it is the test file in the following package structure:
+If the file is in a Julia package, the plugin will automatically try to guess the _alternate_ file assuming it is the test file in the following package structure:
 
 
 ```
