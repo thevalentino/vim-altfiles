@@ -19,9 +19,12 @@ module_name/
 │   └── other_file_name.py
 │
 └── tests/
+    ├── __init__.py
     ├── file_name_tests.py
     └── other_file_tests.py
 ```
+
+Here it's important that `module_name` repeats in the structure and that the folders contain the `__init__.py` files. Also, the tests must be in a folder named `tests` and the individual files must have the suffix `_tests.py`.
 
 ## Julia Package
 
@@ -40,3 +43,4 @@ package_name/
     └── other_file_tests.jl
 ```
 
+Here it's important that the source code of the package is contained in a folder named `src` and the tests in a folder named `tests`, with files having a suffix `_tests.jl`.
