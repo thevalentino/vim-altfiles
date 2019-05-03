@@ -5,4 +5,3 @@ endfunction
 
 
 command! -nargs=* SetAlternateFile :call SetAlternateFile(<args>)
-
