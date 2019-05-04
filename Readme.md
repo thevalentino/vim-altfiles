@@ -20,11 +20,11 @@ module_name/
 │
 └── tests/
     ├── __init__.py
-    ├── file_name_tests.py
-    └── other_file_tests.py
+    ├── file_name_test.py
+    └── other_file_test.py
 ```
 
-Here it's important that `module_name` repeats in the structure and that the folders contain the `__init__.py` files. Also, the tests must be in a folder named `tests` and the individual files must have the suffix `_tests.py`.
+Here it's important that `module_name` repeats in the structure and that the folders contain the `__init__.py` files. Also, the tests must be in a folder named `tests` and the individual files must have the suffix `_test.py`. This complies with the default `pytest` discovery.
 
 ## Julia Package
 
