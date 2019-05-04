@@ -4,12 +4,12 @@ function! GuessPythonAltFileName()
         return 0
     endif
     let full_fname = expand('%:p')
-    if match(full_fname, '_tests\.py$') != -1
+    if match(full_fname, '_test\.py$') != -1
         let full_fname = substitute(full_fname, '/\(\w\+\)/tests/', '/\1/\1/', "")
-        let full_fname = substitute(full_fname, '_tests\.py$', '.py', "")
+        let full_fname = substitute(full_fname, '_test\.py$', '.py', "")
     else
         let full_fname = substitute(full_fname, '/\(\w\+\)/\1/', '/\1/tests/', "")
-        let full_fname = substitute(full_fname, '\.py$', '_tests.py', "")
+        let full_fname = substitute(full_fname, '\.py$', '_test.py', "")
     endif
     let b:alt_file = full_fname
     return 1
